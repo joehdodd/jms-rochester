@@ -1,0 +1,158 @@
+:root {
+    --main-black-color: #313131;
+    --main-grey-color: #f3f3f3;
+    --alt-grey-color: #cecece;
+    --main-white-color: #fff;
+    --main-blue-color: #15487c;
+  }
+  
+  /* BODY IS display: flex; DIRECT CHILDREN NEED flex: 1; */
+  body {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    background-color: var(--main-grey-color);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* header DIRECT CHILD OF body */
+  header {
+    background-color: var(--main-white-color);
+    border-bottom: 1px solid var(--alt-grey-color);
+    flex: 1;
+  }
+  
+  nav {
+    padding: 8px;
+    display: grid;
+    align-items: center;
+    min-height: 50px;
+  }
+  
+  nav h1 {
+    font-size: 32px;
+    margin: 0px;
+    color: var(--main-blue-color);
+  }
+  
+  .header-logo-title-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-logo-img {
+    max-width: 100px;
+    border-right: 2px solid var(--main-blue-color);
+    padding-right: 4px;
+    margin-right: 4px;
+  }
+  
+  /* main DIRECT CHILD OF body */
+  main {
+    padding: 8px;
+    flex: 1;
+  }
+  
+  main h3 {
+    color: var(--main-blue-color);
+    text-decoration: underline;
+  }
+  
+  main hr {
+    border: 1px solid var(--main-blue-color);
+  }
+  
+  .hero-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("https://www.montanusphotography.com/nmphoto/rochester-cityscapes/5064-edited-layers-newest-edit-900-logo.jpg");
+    background-blend-mode: color;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .hero-container {
+    color: var(--main-white-color);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-container h2 {
+    font-size: 48px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 8px;
+    align-items: center;
+    width: 100vw;
+  }
+  
+  .card {
+    padding: 0px 8px;
+    max-width: 100%;
+  }
+  
+  .info-rows {
+    align-self: start;
+  }
+  
+  .main-title-text {
+    font-size: 82px;
+    color: #313131;
+  }
+  
+  .card h3 {
+    color: var(--main-black-color);
+    margin-top: 0px;
+  }
+  
+  .card span {
+    font-size: 12px;
+    color: var(--main-blue-color);
+  }
+  
+  .team-openings-container { 
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: flex-start;
+  }
+  
+  .team-openings-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--main-blue-color);
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    margin: 2px 8px 2px 0px;
+  }
+  
+  /* footer DIRECT CHILD OF body */
+  footer {
+    padding: 8px;
+    height: 100px;
+    display: grid;
+    flex: 1;
+  }
+  
+  .footer-img-credit {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    grid-gap: 2px;
+    align-self: end;
+  }
+  
